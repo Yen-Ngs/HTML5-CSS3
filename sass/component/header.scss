@@ -1,0 +1,35 @@
+@import "../helpers/variable.scss";
+
+header {
+  background-image: url(../images/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  .navbar {
+    .navbar-brand {
+      color: $cPrimary;
+      font-size: $h4;
+      font-weight: $regular;
+    }
+    .navbar-nav {
+      .nav-item {
+        float: right;
+
+        &.active {
+          .nav-link {
+            color: $cPrimary;
+            font-size: $h5;
+          }
+        }
+        .nav-link {
+          color: $cPrimary;
+          display: flex;
+          justify-content: end;
+          font-size: $h5;
+        }
+      }
+    }
+  }
+}
